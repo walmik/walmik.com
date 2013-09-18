@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+	<title>Walmik Deshpande</title>
+	<meta name='keywords' content='walmik, walmik deshpande, frontend developer, san francisco frontend developer, javascript, backbone, jquery, grunt, node'>
+    <meta name='description' content='Walmik Deshpande is a frontend developer and UX designer from the San Francisco bay area with over 10 years of experience encompassing web design and web application development.'>
+    <meta name='author' content='Walmik Deshpande'>
+    <meta charset='UTF-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel='canonical' href='http://walmik.info' />
+	<style>
+	body {
+		background-color: #f0f9ff;
+		font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		text-align: center;
+		color: #666;
+		font-size: 13px;
+		padding-top: 60px;
+	}
+
+	a { text-decoration: none; color: #666; }
+	a:hover { text-decoration: underline; }
+
+	h1#logo {
+	    width: 236px;
+		height: 41px;
+		margin: 0 auto;
+		padding: 0px;
+		text-indent: -9999px;
+		background: url(walmik-logo.png);
+		font-weight: 100;
+		font-family: 'Helvetica Neue', Hevletica, sans-serif;
+		color: #000;
+	}
+
+	em { color: #bbbbbb; }
+
+	img { border: none; }
+
+	#lang {
+		display: inline-block;
+		width: 80px;
+		text-align: left;
+		font-size: 13px;
+	}
+
+	p img { margin-right: 2px; }
+	p img:hover { box-shadow: 0px 0px 4px #666; }
+	</style>
+</head>
+<body>
+
+	<img src='walmik.png' />
+	<h1 id='logo'>Walmik Deshpande</h1>
+	<p>
+		<em>works @</em> <a href='http://enfos.com'>ENFOS</a>,<em> lives in</em> San Francisco Bay Area,<em> loves</em> <span id='lang'></span>
+	</p>
+	<br />
+	<p>
+		<a href='http://twitter.com/iwalmik'><img src='icon-tw.gif' alt='Twitter' /></a>
+		<a href='https://github.com/walmik'><img src='icon-gh.gif' alt='Github' /></a>
+		<a href='http://walmik.com'><img src='icon-blog.gif' alt='Blog' /></a>
+	</p>
+
+	<script type='text/javascript'>
+	(function(){
+		var langEl = document.getElementById('lang'),
+			arr = ['JavaScript','jQuery','Backbone','Grunt','Yeoman','HTML5','CSS3','Sublime Text','Photoshop','PHP','MySQL','Python','Node.js','Haskell','Linux','Crunchbang'],
+			count = 0;
+		langEl.innerHTML = arr[count];
+		setInterval(function(){
+			langEl.innerHTML = arr[count];
+			count++;
+			//if(count == arr.length - 1) count = 0;
+			count == arr.length-1 && (count=0)
+		}, 2000);
+	})();
+	</script>
+	<script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-8347688-12']);
+        _gaq.push(['_trackPageview']);
+      
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+      
+    </script>
+</body>
+</html>
