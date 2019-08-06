@@ -1,4 +1,4 @@
-walmik.info
+walmik.com
 ===========
 
-walmik.info minimalistic website
+walmik.com minimalistic website
